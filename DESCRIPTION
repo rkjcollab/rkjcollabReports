@@ -4,8 +4,9 @@ Title: RKJcollab Report Templates
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Charlie", "Repaci",
-      "charlie.repaci@cuanschutz.edu",
+      given = "Charlie", 
+      family = "Repaci",
+      email = "charlie.repaci@cuanschutz.edu",
       role = c("aut", "cre")
     )
   )
