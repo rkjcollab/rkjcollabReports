@@ -4,7 +4,6 @@ author: "Author"
 date: "Last compiled on `r Sys.Date()`"
 output: 
   html_document:
-    css: styles.css
     toc: true
     toc_float: true
     df_print: kable
@@ -35,9 +34,42 @@ library(Hmisc) # for a hiding TOC
 
 ```{css, echo=FALSE}
 /* Put any additional styling you want in here */
+
+.table-hover > tbody > tr:hover { /* Allows color to change on hover for kableExtra */
+  background-color: #00A99D;
+  color: white;
+  font-weight: bold;
+}
+
+mark { /* Allows you to highlight using tags in text */
+  background-color: #75D1CA;
+  color: black;
+}
+
+body{ /* Change font and size */
+  font-family: Helvetica;
+  font-size: 12pt;
+  margins: 200px; /* Only works if you're hiding the TOC with Hmisc */
+}
+
+.graybox { /* Add gray box behind text */
+  padding: 1em;
+  background: #eee;
+  color: black;
+  border: 2px solid black;
+}
+
+code.r{
+  font-size: 16px;
+}
+
+pre {
+  font-size: 16px
+}
+
 ```
 
-`r Hmisc::hidingTOC()` To hide the TOC, and make the usable area wider. Not needed for most reports.
+` r Hmisc::hidingTOC()` To hide the TOC and make the usable area wider, delete the space between ` and r. Not needed for most reports.
 
 <br>
 
@@ -87,9 +119,9 @@ Include more detailed background information in this section if needed.
 
 ```{r load_data}
 
-dataname1 = read.csv("path/to/data/here/dataname1.csv")
-dataname2 = readRDS("path/to/data/here/dataname2.rds")
-load("path/to/data/here/dataname3.Rdata")
+# dataname1 = read.csv("path/to/data/here/dataname1.csv")
+# dataname2 = readRDS("path/to/data/here/dataname2.rds")
+# load("path/to/data/here/dataname3.Rdata")
 
 ```
 
@@ -117,7 +149,7 @@ that created the images.
 ![**Figure 1** picture caption text](path/to/image.png)
 
 ```{r, out.height = "700px", out.width='700px'}
-knitr::include_graphics("path/to/image.png")
+#knitr::include_graphics("path/to/image.png")
 ```
 
 <br>
