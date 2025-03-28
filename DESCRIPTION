@@ -1,0 +1,14 @@
+Package: rkjcollabReports
+Type: Package
+Title: RKJcollab Report Templates
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "RKJcollab", "Members",
+      role = c("aut", "cre")
+    )
+  )
+Description: Once installed, allows lab members to easily select RMD templates for generating reports.
+License: 
+Encoding: UTF-8
+LazyData: true

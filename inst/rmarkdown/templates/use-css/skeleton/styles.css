@@ -1,0 +1,45 @@
+
+/* logo in header code:
+https://stackoverflow.com/questions/43009788/insert-a-logo-in-upper-right-corner-of-r-markdown-html-document */
+
+#header {
+  background-image: url("logo.png");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  padding: 5px;
+}
+#header > * {
+  max-width: calc(100% - 225px);
+}
+
+.table-hover > tbody > tr:hover { /* Allows color to change on hover for kableExtra */
+  background-color: #00A99D;
+  color: white;
+  font-weight: bold;
+}
+
+mark { /* Allows you to highlight using tags in text */
+  background-color: #75D1CA;
+  color: black;
+}
+
+body{ /* Change font and size */
+  font-family: Helvetica;
+  font-size: 12pt;
+  margins: 200px; /* Only works if you're hiding the TOC with Hmisc */
+}
+
+.graybox { /* Add gray box behind text */
+  padding: 1em;
+  background: #eee;
+  color: black;
+  border: 2px solid black;
+}
+
+code.r{
+  font-size: 16px;
+}
+
+pre {
+  font-size: 16px
+}
