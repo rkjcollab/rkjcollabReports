@@ -1,6 +1,6 @@
-Package: rkjcollabReports
+Package: templates
 Type: Package
-Title: RKJcollab Report Templates
+Title: RKJcollab Templates
 Version: 0.1.0
 Authors@R: c(
     person(
