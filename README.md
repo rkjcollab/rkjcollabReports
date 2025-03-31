@@ -1,5 +1,5 @@
-# rkjcollabReports
-Rmd templates for reports
+# templates
+Rmd templates for RKJcollab reports
 
 Used these instructions to create the templates and package: https://bookdown.org/yihui/rmarkdown/document-templates.html
 
